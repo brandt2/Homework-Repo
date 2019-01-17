@@ -37,8 +37,8 @@ def sluggish_octopus(fish_arr)
 		(i+1).upto(fish_arr.length-1) do |j|
 			max_length = false if fish_arr[i].length < fish_arr[j].length
 		end
+		return fish_arr[i] if max_length
 	end
-	return fish_arr[i] if max_length
 end
 
 # O(n log n) time
